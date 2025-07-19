@@ -1,7 +1,7 @@
-# pizza_sql
+# SQL analysis using PIZZA dataset
 This dataset is designed for SQL analysis exercises, providing comprehensive data on pizza sales, orders, and customer preferences. It includes details on order quantities, pizza types, and the composition of various pizzas. The dataset is ideal for practicing SQL queries, performing revenue analysis, and understanding customer behavior in the pizza industry.
 
-## (Intermediate)
+## (Basic)
 ## 1. Retrieve the total number of orders placed.
     select COUNT(order_id) from pesanan;
 Output: 21350
@@ -42,6 +42,7 @@ Output:
     LIMIT 5;
 Output:
 
+
 <img width="440" height="202" alt="image" src="https://github.com/user-attachments/assets/53315550-4908-4ae7-b775-03087646d694" />
 
 ## (Intermediate)
@@ -61,6 +62,7 @@ Output:
     JOIN pizza on pizzatype.pizza_type_id=pizza.pizza_type_id
     Group by pizzatype.category;
 Output:
+
 <img width="589" height="178" alt="image" src="https://github.com/user-attachments/assets/ef2a8e2c-a471-4ae4-9cb6-e7957dc24d99" />
 
 ## 3. Group the orders by date and calculate the average number of pizzas ordered per day.
